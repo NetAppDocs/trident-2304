@@ -1,0 +1,20 @@
+---
+sidebar: sidebar
+permalink: trident-use/anf.html
+keywords: trident backend, azure netapp files, smb volumes, smb, windows
+summary: You can configure Azure NetApp Files (ANF) as the backend for Astra Trident. You can attach NAS and SMB volumes using an ANF backend.
+---
+
+= Configure an Azure NetApp Files backend
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can configure Azure NetApp Files (ANF) as the backend for Astra Trident. You can attach NFS and SMB volumes using an ANF backend.
+
+== Considerations
+
+* The Azure NetApp Files service does not support volumes smaller than 100 GB. Astra Trident automatically creates 100-GB volumes if a smaller volume is requested.
+
+* Astra Trident supports SMB volumes mounted to pods running on Windows nodes only.

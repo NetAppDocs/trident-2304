@@ -11,9 +11,6 @@ summary: Documentation for previous releases of Astra Trident is available in ca
 :imagesdir: ../media/
 
 [.lead]
-You can use the version selector to navigate between the latest version and previous four versions or use the links below. 
-
-== Earlier versions
 If you aren't running Astra Trident 23.04, the documentation for previous releases is available based on the link:https://mysupport.netapp.com/site/info/trident-support[Astra Trident Release and Support Lifecycle^]. 
 
 * https://docs.netapp.com/us-en/trident-2301/index.html[Astra Trident 23.01^]

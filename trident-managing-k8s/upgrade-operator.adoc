@@ -14,7 +14,7 @@ summary: You can easily upgrade an existing Astra Trident installation by using 
 You can easily upgrade an existing Astra Trident installation using the operator either manually or using Helm.
 
 == Upgrade using the Trident operator
-Generally, you should upgrade Astra Trident using the same method that was used to originally install it. Review link:upgrade-trident.html#select-an-upgrade-method[Select an upgrade method] before attempting to upgrade with the Trident operator. 
+Generally, you should upgrade Astra Trident using the same method that was used to originally install it. Review link:upgrade-trident.html#upgrade-trident.html#step-3-select-an-upgrade-method[Select an upgrade method] before attempting to upgrade with the Trident operator. 
 
 [IMPORTANT]
 ====
@@ -82,7 +82,7 @@ Status:   Installed
 Version:  v20.10.1
 ----
 +
-NOTE:  If status shows `Updating`, ensure you resolve it before proceeding. For a list of possible status values, see https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html[here^].
+NOTE:  If status shows `Updating`, ensure you resolve it before proceeding. For a list of possible status values, see link:../trident-get-started/kubernetes-deploy-operator.html[here^].
 . Create the `TridentOrchestrator` CRD by using the manifest provided with the Trident installer.
 +
 ----
@@ -136,7 +136,7 @@ NAME                                     DESIRED   CURRENT   READY   AGE
 replicaset.apps/trident-csi-68d979fb85   1         1         1       105d
 ----
 
-. (Optional) If the install parameters need to be modified, update the `TridentProvisioner` spec. This can include changes such as changing: the values for `tridentImage`, `autosupportImage`, private image repository, and providing `imagePullSecrets`) after deleting the namespace-scoped operator and before installing the cluster-scoped operator. For a complete list of parameters that can be updated, refer to the link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-customize-deploy.html#configuration-options[configuration options].
+. (Optional) If the install parameters need to be modified, update the `TridentProvisioner` spec. This can include changes such as changing: the values for `tridentImage`, `autosupportImage`, private image repository, and providing `imagePullSecrets`) after deleting the namespace-scoped operator and before installing the cluster-scoped operator. For a complete list of parameters that can be updated, refer to the link:../trident-get-started/kubernetes-customize-deploy.html#configuration-options[configuration options].
 +
 ----
 kubectl patch tprov <trident-provisioner-name> -n <trident-namespace> --type=merge -p '{"spec":{"debug":true}}'

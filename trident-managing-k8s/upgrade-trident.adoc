@@ -72,7 +72,7 @@ WARNING: Do not use the operator to upgrade Trident if you are using an `etcd`-b
 === When to upgrade using `tridentctl`
 You can link:upgrade-tridentctl.html[upgrade using `tridentctl`] if you originally installed Astra Trident using `tridenctl'. 
 
-`tridentctl` is the conventional method of installing Astra Trident and provides the most options for those requiring complex customization. For more details, refer to link:..trident-get-started/kubernetes-deploy.html#choose-your-installation-method[Choose your installation method].
+`tridentctl` is the conventional method of installing Astra Trident and provides the most options for those requiring complex customization. For more details, refer to link:../trident-get-started/kubernetes-deploy.html#choose-your-installation-method[Choose your installation method].
 
 == Changes to the operator
 
